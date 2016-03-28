@@ -27,9 +27,9 @@ Moreover as it uses Hash.new and constructs attribute on runtime, you can thrott
 |Symbol|Description|
 |---|---|
 |_|It represents id as short cut|
-|nested_objects(<name>)|It represents the alias for the nested object (it works with single or multiple values)|
-|<alias_name>.<key>|It represents the specific attribute from the nested object|
-|<alias_name>.<key>(<alias>)|It represents aliasing a nested object from a nested object and this list could go on and on.|
+|nested_objects(< name >)|It represents the alias for the nested object (it works with single or multiple values)|
+|< alias_name >.< key >|It represents the specific attribute from the nested object|
+|< alias_name >.< key >(< alias >)|It represents aliasing a nested object from a nested object and this list could go on and on.|
 
 ### Example Usages
 
