@@ -1,3 +1,7 @@
 machine:
   ruby:
     version: 2.2.1
+
+dependencies:
+  pre:
+    - install bundler -v "1.11.2"
