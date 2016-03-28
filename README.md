@@ -1,6 +1,7 @@
 # LazyAsJson
 
 [![Circle CI](https://circleci.com/gh/we4tech/lazy-as-json.svg?style=svg)](https://circleci.com/gh/we4tech/lazy-as-json)
+[![Gem Version](https://badge.fury.io/rb/lazy_as_json.svg)](https://badge.fury.io/rb/lazy_as_json)
 
 A simple and concise way to use as_json with “only”, “except” and other options without using them literally.
 
