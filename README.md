@@ -22,6 +22,22 @@ However it might seems quite trivial but frankly speaking it saves lot in respon
 
 Moreover as it uses Hash.new and constructs attribute on runtime, you can throttle calling from the expensive method by using this parameter string.
 
+## How to Construct Attribute Filters ?
+
+|Symbol|Description|
+|---|---|
+|_|It represents id as short cut|
+|nested_objects(<name>)|It represents the alias for the nested object (it works with single or multiple values)|
+|<alias_name>.<key>|It represents the specific attribute from the nested object|
+|<alias_name>.<key>(<alias>)|It represents aliasing a nested object from a nested object and this list could go on and on.|
+
+### Example Usages
+
+```ruby
+User.as_json(only_keys: '_,first_name,email,profiles(p),p._,p.company,p.address(pa),pa.city,pa.country(pac),pac.iso_code')
+```
+
+Here, "_" represents `user_instance.id`, `profiles` represents `user_instance.profiles`, `p.address(pa)` represents `user_instance.profiles[].address` and finally `pa.country(pac)` represents `user_instance.profiles[].address.country` and so on.
 
 ## Installation
 
