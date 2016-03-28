@@ -1,5 +1,5 @@
-require "lazy_as_json/version"
+require 'lazy_as_json/version'
 
-module LazyAsJson
-  # Your code goes here...
-end
+module LazyAsJson ; end
+
+require 'lazy_as_json/attribute_filter'
