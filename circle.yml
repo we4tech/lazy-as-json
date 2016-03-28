@@ -4,5 +4,5 @@ machine:
 
 dependencies:
   pre:
-    - if $(gem list bundler -v 1.11.2 -i); then gem uninstall -x -i /home/ubuntu/.rvm/gems/ruby-2.2.1@global bundler; fi
+    - if $(gem list bundler -v 1.9.5 -i); then gem uninstall -x -i /home/ubuntu/.rvm/gems/ruby-2.2.1@global bundler; fi
     - gem install bundler -v "1.11.2"
